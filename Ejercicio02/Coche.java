@@ -1,22 +1,11 @@
-public class Coche extends Vehiculo {
-    private int marchas;
-    Coche(){
+public class Coche extends Vehiculo{
+    private int marcha=0;
+    Coche(int m){
         super();
-        this.marchas=4;
-    }
-    Coche(int marchas){
-        super();
-        this.marchas = marchas;
-    }
-    public int getMarchas(){
-        return this.marchas;
+        this.marcha =m;
     }
     public void quemaRuedas(){
-        System.out.println("Estoy quemando ruedas");
+        System.out.println("Fffffiaumm");
     }
-    @Override
-    public void recorre(int kms){
-        super.recorre(kms);
-        System.out.println("Rodando durante. "+kms+" kms");
-    }
+
 }
